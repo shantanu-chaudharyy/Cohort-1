@@ -1,0 +1,83 @@
+
+.Navbar {
+    display: flex;
+
+    justify-content: space-between;
+    /* Pushes LEFT group to left
+       and RIGHT group to right */
+
+    align-items: center;
+    /* Vertically centers everything */
+
+    padding: 10px 20px;
+
+    box-shadow: 1px 2px 3px grey;
+
+    background-color: rgba(0, 15, 64, 0.867);
+}
+
+
+/* ---------------- LEFT SIDE ---------------- */
+
+.left {
+    display: flex;
+    /* Puts logo and links NEXT TO each other */
+
+    align-items: center;
+}
+
+
+.logo {
+    font-family: Montserrat;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding-right: 20px;
+    /* Space between logo and links */
+    color: white;
+}
+
+
+.links {
+     font-family: Montserrat;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    /* Makes all links horizontal */
+
+    gap: 8px;
+    /* Space between individual links */
+}
+
+
+.links a {
+    color: rgb(167, 167, 167);
+}
+
+
+/* ---------------- RIGHT SIDE ---------------- */
+
+.input-button {
+    display: flex;
+    /* Puts search and button next to each other */
+
+    align-items: center;
+
+    gap: 5px;
+    /* Small gap between search and button */
+
+}
+.Download{
+  background-color: rgb(231, 231, 231);
+            color: black;
+            padding: 20;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease, background-color 0.5 ease;
+   
+ 
+}
+.Download:hover{
+    border-color: grey;
+    box-shadow: 0 0 5px 10px white ; /* outer border */
+}
