@@ -1,1 +1,0 @@
-Standalone JavaScript snippets demonstrating function declarations, conditionals, and object property access for the Week-2 introductory exercises.

@@ -1,1 +1,0 @@
-Top-level learning repository containing a JavaScript basics example and static assets for the Warmup-Video course.

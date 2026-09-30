@@ -1,1 +1,0 @@
-Plain ES5-style JavaScript (function declarations, `var`, `let`, string concatenation) runnable in any Node.js environment; no dependencies or framework.
