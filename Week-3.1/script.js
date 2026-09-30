@@ -18,18 +18,10 @@ const div = document.getElementById("container");
 
 div.innerHTML = `<ul>${names.join("")}</ul>`;
 
-const newArray = [];
-
-for(let i = 0; i<students.length; i++) {
-    if(students[i].id%2 == 0) {
-        newArray.push(students[i]);
-    }
-}
-
 const newArray = students.filter((curValue) => {
     if(curValue.id % 2 == 0) return true;
     else return false;
-})
+});
 
 console.log("New Array here...")
 console.log(newArray);

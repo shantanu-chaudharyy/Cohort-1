@@ -1,0 +1,1 @@
+Flat, non-programming workspace: a single `Zerodha.html` page paired with `image.jpg` and `page.jpg` assets under `Warmup-Video/`, plus a top-level `.gitignore`. There is no orchestrator code or cross-child wiring — the directory serves as a self-contained demo of the Week-2 JavaScript exercises.

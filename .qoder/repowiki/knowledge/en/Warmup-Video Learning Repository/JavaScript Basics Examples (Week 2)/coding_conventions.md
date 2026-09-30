@@ -1,0 +1,2 @@
+- Each file is a standalone script that declares functions at the top level and invokes them immediately with hard-coded test values at the bottom of the file.
+- Console output is used as the sole observable side effect, with messages printed via `console.log` rather than return values or assertions.

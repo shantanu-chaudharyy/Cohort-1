@@ -1,0 +1,27 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: en-US
+branch: main
+nodes_managed: true
+exported_at: "2026-09-30T17:18:41Z"
+modules:
+    "":
+        dir_name: Warmup-Video Learning Repository
+        title: Warmup-Video Learning Repository
+        scope:
+            - Warmup-Video/
+            - .gitignore
+        source_files: []
+        children:
+            - week_2_javascript_basic
+        depends_on: []
+        related_to: []
+    week_2_javascript_basic:
+        dir_name: JavaScript Basics Examples (Week 2)
+        title: JavaScript Basics Examples (Week 2)
+        scope:
+            - Week-2/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
