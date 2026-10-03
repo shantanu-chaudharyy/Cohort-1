@@ -1,9 +1,17 @@
-function setTimeoutPromisified(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+function setTimeoutPromisifed (delay){
+
+    return new Promise(function(resolve,reject){
+
+      setTimeout(function(){
+
+        resolve();
+      }), delay
+    })
+
 }
 
-function callback() {
-	console.log("3 seconds have passed");
-}
 
-setTimeoutPromisified(3000).then(callback)
+
+setTimeout(() =>{
+  console.log("2 second has been passed");
+},2000)
