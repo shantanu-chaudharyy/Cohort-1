@@ -1,90 +1,90 @@
 // Asycn funtion
-// const fs = require("fs");
+const fs = require("fs");
 
-// fs.readFile("aa.txt", "utf-8", function (err, contents) {
-//     const trimmedContents = contents.trim();
+fs.readFile("aa.txt", "utf-8", function (err, contents) {
+    const trimmedContents = contents.trim();
 
-//     fs.writeFile("aa.txt", trimmedContents, function () {
-//         console.log("done!");
-//     });
-// });
+    fs.writeFile("aa.txt", trimmedContents, function () {
+        console.log("done!");
+    });
+});
 
 
 // //promisefied verion
-// const fs = require("fs");
+const fs = require("fs");
 
-// function cleanFile(FilePath) {
-//     return new Promise(function (resolve, reject) {
+function cleanFile(FilePath) {
+    return new Promise(function (resolve, reject) {
 
-//         fs.readFile(FilePath, "utf-8", function (err, contents) {
+        fs.readFile(FilePath, "utf-8", function (err, contents) {
 
-//             if (err) {
-//                 reject();
-//             } else {
+            if (err) {
+                reject();
+            } else {
 
-//                 const trimmedContents = contents.trim();
+                const trimmedContents = contents.trim();
 
-//                 fs.writeFile(FilePath, trimmedContents, function (err) {
+                fs.writeFile(FilePath, trimmedContents, function (err) {
 
-//                     if (err) {
-//                         reject();
-//                     } else {
-//                         resolve();
-//                     }
+                    if (err) {
+                        reject();
+                    } else {
+                        resolve();
+                    }
 
-//                 });
-//             }
-//         });
-//     });
-// }
+                });
+            }
+        });
+    });
+}
 
-// cleanFile("aa.txt")
-//     .then(function () {
-//         console.log("File has been cleaned");
-//     })
-//     .catch(function () {
-//         console.log("Caught an error");
-//     });
+cleanFile("aa.txt")
+    .then(function () {
+        console.log("File has been cleaned");
+    })
+    .catch(function () {
+        console.log("Caught an error");
+    });
 
-// Async Await
+//Async Await
 
-// const fs = require("fs");
+const fs = require("fs");
 
-// function cleanFile(FilePath) {
-//     return new Promise(function (resolve, reject) {
+function cleanFile(FilePath) {
+    return new Promise(function (resolve, reject) {
 
-//         fs.readFile(FilePath, "utf-8", function (err, contents) {
+        fs.readFile(FilePath, "utf-8", function (err, contents) {
 
-//             if (err) {
-//                 reject();
-//             } else {
+            if (err) {
+                reject();
+            } else {
 
-//                 const trimmedContents = contents.trim();
+                const trimmedContents = contents.trim();
 
-//                 fs.writeFile(FilePath, trimmedContents, function (err) {
+                fs.writeFile(FilePath, trimmedContents, function (err) {
 
-//                     if (err) {
-//                         reject();
-//                     } else {
-//                         resolve();
-//                     }
+                    if (err) {
+                        reject();
+                    } else {
+                        resolve();
+                    }
 
-//                 });
-//             }
-//         });
-//     });
-// }
-// async function main(){
-//     try{
-//         await cleanFile("aa.txt");
-    
-//         console.log("File has been cleaned");
-//     } catch(e){
-//         console.log("Caught an error");
-//     }
-// }
+                });
+            }
+        });
+    });
+}
+async function main() {
+    try {
+        await cleanFile("aa.txt");
 
-// main();
+        console.log("File has been cleaned");
+    } catch (e) {
+        console.log("Caught an error");
+    }
+}
+
+main();
 
 
 // Sync
